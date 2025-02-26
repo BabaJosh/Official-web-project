@@ -1,273 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fur Season Boutique - Products</title>
     <style>
-        body {
-            background-color: #ffffff; /* Vibrant light coral background */
-            font-family: 'Times New Roman', Times, serif; /* Times New Roman font */
-            margin: 0;
-            padding: 0;
-        }
-        header, footer {
-            background-color: #a96623; /* Vibrant coral */
-            color: rgb(255, 254, 254);
-            padding: 10px 20px;
-            text-align: center;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: rgb(255, 255, 255);
-            text-decoration: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        nav ul li a:hover {
-            background-color: white; /* Light up background */
-            color: #6176ff; /* Change text color on hover */
-        }
-        section {
-            padding: 20px;
-            background-color: #fff; /* White background for sections */
-            margin: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-        }
-        table, th, td {
-            border: 1px solid #333;
-        }
-        th, td {
-            padding: 10px;
-            text-align: left;
-        }
-        .product-container {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-        .product {
-            text-align: center;
-            margin: 10px;
-            width: 30%;
-        }
-        .product img {
-            width: 200px;
-            height: 200px;
-            border: 2px solid #ff6f61;
-            border-radius: 10px;
-        }
-        .price {
-            font-size: 1.2em;
-            color: #ff6f61;
-            font-weight: bold;
-        }
+      body {
+        background-color: #ffffff; /* Vibrant light coral background */
+        font-family: "Times New Roman", Times, serif; /* Times New Roman font */
+        margin: 0;
+        padding: 0;
+      }
+      header,
+      footer {
+        background-color: #a96623; /* Vibrant coral */
+        color: rgb(255, 254, 254);
+        padding: 10px 20px;
+        text-align: center;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      nav ul li {
+        display: inline;
+        margin: 0 15px;
+      }
+      nav ul li a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+      }
+      nav ul li a:hover {
+        background-color: white; /* Light up background */
+        color: #6176ff; /* Change text color on hover */
+      }
+      section {
+        padding: 20px;
+        background-color: #fff; /* White background for sections */
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid #333;
+      }
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+      }
+      .product-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      .product {
+        text-align: center;
+        margin: 10px;
+        width: 30%;
+      }
+      .product img {
+        width: 200px;
+        height: 200px;
+        border: 2px solid #ff6f61;
+        border-radius: 10px;
+      }
+      .price {
+        font-size: 1.2em;
+        color: #ff6f61;
+        font-weight: bold;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header and nav -->
     <header>
-        <h1>Our Products</h1>
-        <nav>
-            <ul>
-                <li><a href="Index.html">Home</a></li>
-                <li><a href="Products.html">Products</a></li>
-                <li><a href="About.html">About Us</a></li>
-            </ul>
-        </nav>
+      <h1>Our Products</h1>
+      <nav>
+        <ul>
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="Products.html">Products</a></li>
+          <li><a href="About.html">About Us</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <!-- Product Categories  -->
+    <!-- Product Categories n -->
     <section id="categories">
-        <h2>Shop by Category</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Category</th>
-                    <th>Description</th>
-                    <th>Price Range</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Food & Treats</td>
-                    <td>Nutritious meals and delicious snacks for your pets.</td>
-                    <td>$10 - $50</td>
-                </tr>
-                <tr>
-                    <td>Toys & Accessories</td>
-                    <td>Interactive toys and stylish accessories.</td>
-                    <td>$5 - $30</td>
-                </tr>
-                <tr>
-                    <td>Grooming & Care</td>
-                    <td>Products to keep your pets clean and healthy.</td>
-                    <td>$15 - $60</td>
-                </tr>
-            </tbody>
-        </table>
+      <h2>Shop by Category</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Price Range</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Food & Treats</td>
+            <td>Nutritious meals and delicious snacks for your pets.</td>
+            <td>$10 - $50</td>
+          </tr>
+          <tr>
+            <td>Toys & Accessories</td>
+            <td>Interactive toys and stylish accessories.</td>
+            <td>$5 - $30</td>
+          </tr>
+          <tr>
+            <td>Grooming & Care</td>
+            <td>Products to keep your pets clean and healthy.</td>
+            <td>$15 - $60</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
 
-    <!-- Food & Treats  -->
+    <!-- Food & Treats n -->
     <section id="food-treats">
-        <h2>Food & Treats</h2>
-        <div class="product-container">
-            <div class="product">
-                <img src="Images-and-links/5135726.jpg" alt="Dog Food">
-                <p><strong>Nutritious Dog Food</strong></p>
-                <p>Premium dog food made with natural ingredients.</p>
-                <p class="price">$25.99</p>
-            </div>
-            <div class="product">
-                <img src="Images-and-links/download.webp" alt="Cat Food">
-                <p><strong>Grain-Free Cat Food</strong></p>
-                <p>Healthy and delicious cat food for all life stages.</p>
-                <p class="price">$19.99</p>
-            </div>
-            <div class="product">
-                <img src="Images-and-links/download (1).webp" alt="Dog Treats">
-                <p><strong>Organic Dog Treats</strong></p>
-                <p>All-natural treats for your furry friend.</p>
-                <p class="price">$12.99</p>
-            </div>
-            <div class="product">
-                <img src="Images-and-links/shop (1).webp" alt="Cat Treats">
-                <p><strong>Salmon Cat Treats</strong></p>
-                <p>Irresistible salmon-flavored treats for cats.</p>
-                <p class="price">$9.99</p>
-            </div>
+      <h2>Food & Treats</h2>
+      <div class="product-container">
+        <div class="product">
+          <img src="Images-and-links/5135726.jpg" alt="Dog Food" />
+          <p><strong>Nutritious Dog Food</strong></p>
+          <p>Premium dog food made with natural ingredients.</p>
+          <p class="price">$25.99</p>
         </div>
+        <div class="product">
+          <img src="Images-and-links/download.webp" alt="Cat Food" />
+          <p><strong>Grain-Free Cat Food</strong></p>
+          <p>Healthy and delicious cat food for all life stages.</p>
+          <p class="price">$19.99</p>
+        </div>
+        <div class="product">
+          <img src="Images-and-links/download (1).webp" alt="Dog Treats" />
+          <p><strong>Organic Dog Treats</strong></p>
+          <p>All-natural treats for your furry friend.</p>
+          <p class="price">$12.99</p>
+        </div>
+        <div class="product">
+          <img src="Images-and-links/shop (1).webp" alt="Cat Treats" />
+          <p><strong>Salmon Cat Treats</strong></p>
+          <p>Irresistible salmon-flavored treats for cats.</p>
+          <p class="price">$9.99</p>
+        </div>
+      </div>
     </section>
 
     <!-- Toys & Accessories -->
     <section id="toys-accessories">
-        <h2>Toys & Accessories</h2>
-        <div class="product-container">
-            <div class="product">
-                <img src="Images-and-links/download.jpg" alt="Cat Toys">
-                <p><strong>Interactive Cat Toys</strong></p>
-                <p>Keep your cat entertained for hours.</p>
-                <p class="price">$12.99</p>
-            </div>
-            <div class="product">
-                <img src="Images-and-links/download (2).webp" alt="Dog Toys">
-                <p><strong>Durable Dog Toys</strong></p>
-                <p>Perfect for aggressive chewers.</p>
-                <p class="price">$15.99</p>
-            </div>
-            <div class="product">
-                <img src="Images-and-links/shopping (1).webp" alt="Pet Collar">
-                <p><strong>Stylish Pet Collar</strong></p>
-                <p>Comfortable and fashionable collar for your pet.</p>
-                <p class="price">$18.99</p>
-            </div>
-            <div class="product">
-                <img src="Images-and-links/shopping (2).webp" alt="Pet Bed">
-                <p><strong>Cozy Pet Bed</strong></p>
-                <p>Soft and comfortable bed for your pet.</p>
-                <p class="price">$29.99</p>
-            </div>
+      <h2>Toys & Accessories</h2>
+      <div class="product-container">
+        <div class="product">
+          <img src="Images-and-links/download.jpg" alt="Cat Toys" />
+          <p><strong>Interactive Cat Toys</strong></p>
+          <p>Keep your cat entertained for hours.</p>
+          <p class="price">$12.99</p>
         </div>
+        <div class="product">
+          <img src="Images-and-links/download (2).webp" alt="Dog Toys" />
+          <p><strong>Durable Dog Toys</strong></p>
+          <p>Perfect for aggressive chewers.</p>
+          <p class="price">$15.99</p>
+        </div>
+        <div class="product">
+          <img src="Images-and-links/shopping (1).webp" alt="Pet Collar" />
+          <p><strong>Stylish Pet Collar</strong></p>
+          <p>Comfortable and fashionable collar for your pet.</p>
+          <p class="price">$18.99</p>
+        </div>
+        <div class="product">
+          <img src="Images-and-links/shopping (2).webp" alt="Pet Bed" />
+          <p><strong>Cozy Pet Bed</strong></p>
+          <p>Soft and comfortable bed for your pet.</p>
+          <p class="price">$29.99</p>
+        </div>
+      </div>
     </section>
 
-    <!-- Grooming & Care  -->
+    <!-- Grooming & Care n -->
     <section id="grooming-care">
-        <h2>Grooming & Care</h2>
-        <div class="product-container">
-            <div class="product">
-                <img src="Images-and-links/shopping.webp" alt="Grooming Kit">
-                <p><strong>Premium Grooming Kit</strong></p>
-                <p>Everything you need to keep your pet looking their best.</p>
-                <p class="price">$45.99</p>
-            </div>
-            <div class="product">
-                <img src="Images-and-links/download (3).webp" alt="Shampoo">
-                <p><strong>Organic Pet Shampoo</strong></p>
-                <p>Gentle and effective shampoo for all coat types.</p>
-                <p class="price">$14.99</p>
-            </div>
-            <div class="product">
-                <img src="Images-and-links/download (4).webp" alt="Brush">
-                <p><strong>Pet Grooming Brush</strong></p>
-                <p>Keeps your pet's coat smooth and tangle-free.</p>
-                <p class="price">$12.99</p>
-            </div>
-            <div class="product">
-                <img src="Images-and-links/shopping (3).webp" alt="Nail Clippers">
-                <p><strong>Pet Nail Clippers</strong></p>
-                <p>Safe and easy-to-use nail clippers for pets.</p>
-                <p class="price">$9.99</p>
-            </div>
+      <h2>Grooming & Care</h2>
+      <div class="product-container">
+        <div class="product">
+          <img src="Images-and-links/shopping.webp" alt="Grooming Kit" />
+          <p><strong>Premium Grooming Kit</strong></p>
+          <p>Everything you need to keep your pet looking their best.</p>
+          <p class="price">$45.99</p>
         </div>
+        <div class="product">
+          <img src="Images-and-links/download (3).webp" alt="Shampoo" />
+          <p><strong>Organic Pet Shampoo</strong></p>
+          <p>Gentle and effective shampoo for all coat types.</p>
+          <p class="price">$14.99</p>
+        </div>
+        <div class="product">
+          <img src="Images-and-links/download (4).webp" alt="Brush" />
+          <p><strong>Pet Grooming Brush</strong></p>
+          <p>Keeps your pet's coat smooth and tangle-free.</p>
+          <p class="price">$12.99</p>
+        </div>
+        <div class="product">
+          <img src="Images-and-links/shopping (3).webp" alt="Nail Clippers" />
+          <p><strong>Pet Nail Clippers</strong></p>
+          <p>Safe and easy-to-use nail clippers for pets.</p>
+          <p class="price">$9.99</p>
+        </div>
+      </div>
     </section>
 
     <!-- Contact Form Section -->
     <section id="contact">
-        <h2>Contact Us</h2>
-        <form action="#" method="post">
-            <!-- Fieldset for Personal Information -->
-            <fieldset>
-                <legend>Personal Information</legend>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required><br><br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone"><br><br>
-            </fieldset>
+      <h2>Contact Us</h2>
+      <form action="#" method="post">
+        <!-- Fieldset for Personal Information -->
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required /><br /><br />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required /><br /><br />
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" /><br /><br />
+        </fieldset>
 
-            <!-- Fieldset for Preferences -->
-            <fieldset>
-                <legend>Preferences</legend>
-                <label for="pet-type">Pet Type:</label>
-                <select id="pet-type" name="pet-type">
-                    <option value="dog">Dog</option>
-                    <option value="cat">Cat</option>
-                    <option value="other">Other</option>
-                </select><br><br>
-                <label for="newsletter">Subscribe to Newsletter:</label>
-                <input type="checkbox" id="newsletter" name="newsletter"><br><br>
-                <label for="rating">Rate Us:</label>
-                <input type="range" id="rating" name="rating" min="1" max="5"><br><br>
-            </fieldset>
+        <!-- Fieldset for Preferences -->
+        <fieldset>
+          <legend>Preferences</legend>
+          <label for="pet-type">Pet Type:</label>
+          <select id="pet-type" name="pet-type">
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="other">Other</option></select
+          ><br /><br />
+          <label for="newsletter">Subscribe to Newsletter:</label>
+          <input
+            type="checkbox"
+            id="newsletter"
+            name="newsletter"
+          /><br /><br />
+          <label for="rating">Rate Us:</label>
+          <input
+            type="range"
+            id="rating"
+            name="rating"
+            min="1"
+            max="5"
+          /><br /><br />
+        </fieldset>
 
-            <!-- Custom Input Type: Color Picker -->
-            <label for="fav-color">Favorite Color:</label>
-            <input type="color" id="fav-color" name="fav-color"><br><br>
+        <!-- Custom Input Type: Color Picker -->
+        <label for="fav-color">Favorite Color:</label>
+        <input type="color" id="fav-color" name="fav-color" /><br /><br />
 
-            <!-- Submit Button -->
-            <input type="submit" value="Submit">
-        </form>
+        <!-- Submit Button -->
+        <input type="submit" value="Submit" />
+      </form>
     </section>
 
     <!-- Footer Section -->
     <footer>
-       
-        <p>Follow us on:
-            <a href="https://facebook.com">Facebook</a> |
-            <a href="https://instagram.com">Instagram</a> |
-            <a href="https://twitter.com">Twitter</a> |
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Youtube</a>
-        </p>
+      <p>
+        Follow us on: <a href="https://facebook.com">Facebook</a> |
+        <a href="https://instagram.com">Instagram</a> |
+        <a href="https://twitter.com">Twitter</a> |
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Youtube</a>
+      </p>
     </footer>
-</body>
+  </body>
 </html>
